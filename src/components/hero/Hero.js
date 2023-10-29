@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Typewriter, Cursor } from "react-simple-typewriter"
 import "./Hero.css"
 import GitHub from "../asset/github.png"
