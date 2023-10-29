@@ -1,0 +1,133 @@
+.hero-container {
+    height: 90vh;
+    width: 97vw;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4rem;
+}
+
+.hero-detailes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.intro {
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 3rem;
+}
+
+.intro span:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondaryColor);
+}
+
+.hero-name {
+    font-size: 3rem;
+    color: var(--secondaryColor);
+}
+
+.details {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hire-me {
+    height: 2.5rem;
+    width: 10rem;
+}
+.hire-me-ancer {
+    width: fit-content;
+}
+
+.hero-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.circle {
+    border: 3px solid rgb(230, 160, 10);
+    background-color: rgb(31, 68, 102);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle>img {
+    transform: scale(0.4);
+}
+
+.circle:hover {
+    cursor: pointer;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+    background: rgb(0, 0, 0);
+}
+
+.hero-right-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 3rem;
+        margin-top: 9vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left-section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-detailes {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .title {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro {
+        text-align: center;
+        min-width: max-content;
+    }
+
+    .details {
+        text-align: center;
+    }
+}

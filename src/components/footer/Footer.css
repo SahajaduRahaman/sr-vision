@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(83, 92, 92, 0.89);
+    padding: 1rem;
+}
+
+.footer-left {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(6, 29, 43);
+}
+
+
+@media only screen and (max-width: 650px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

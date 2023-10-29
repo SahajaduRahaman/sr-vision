@@ -1,0 +1,136 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    padding: 0 2rem;
+    position: fixed;
+    width: 94vw;
+    z-index: 999;
+}
+
+.navColorChange {
+    transition: ease-in-out;
+    background-color: rgb(92, 34, 100);
+    color: white;
+}
+
+.navbar-left-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.toggle-theme {
+    display: flex;
+    border: 3px solid rgb(231, 111, 12);
+    border-radius: 1rem;
+    position: relative;
+    padding: 0.1rem;
+    cursor: pointer;
+    gap: 0.1rem;
+}
+
+.toggle-theme>* {
+    width: 0.8rem;
+    height: 0.8rem;
+    color: rgb(231, 111, 12);
+}
+
+.toggle-btn {
+    border-radius: 100%;
+    background: rgb(231, 111, 12);
+    position: absolute;
+    border: none;
+}
+
+.navbar-right-section {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.nav-item {
+    list-style: none;
+    font-weight: bold;
+    padding: 11px 26px 11px 26px;
+    border-radius: 34px;
+    border: none;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: rgb(8, 226, 241);
+}
+
+.nav-btn {
+    padding: 1rem;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: black;
+    display: none;
+	font-size: 1.8rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-btn {
+        display: block;
+    }
+
+    .navbar-right-section {
+        position: fixed;
+		top: 0;
+		right: -40%;
+		height: 100%;
+		width: 40%;
+        min-width: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
+		background-color: rgb(82, 82, 82);
+		transition: 1s;
+    }
+
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+		align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    .responsive_nav {
+		transform: translateX(-100%);
+	}
+
+    .nav-close-btn {
+		position: absolute;
+		/* top: 0.1rem; */
+		left: 0.5rem;
+	}
+}

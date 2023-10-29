@@ -1,0 +1,155 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact-subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondaryColor);
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-left {
+    display: flex;
+    flex: 1;
+}
+
+.successfull {
+    position: absolute;
+    transform: scale(0.3);
+    width: fit-content;
+    bottom: 0;
+    left: 2%;
+}
+
+.form-right {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-image: url(../asset/deer.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.contact-name {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+    gap: 0.3rem;
+}
+
+.contact-nm {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+    background: transparent;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+    gap: 0.3rem;
+}
+
+.contact-mail {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+    background: transparent;
+}
+
+.contact-msg {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+    gap: 0.3rem;
+}
+
+.cntct-msg {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+    background: transparent;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact-container {
+        height: auto;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-right {
+        min-width: max-content;
+        width: 80%;
+    }
+
+    .contact {
+        gap: 3rem;
+    }
+}
