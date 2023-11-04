@@ -68,3 +68,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+@media only screen and (max-width : 1024px) {
+    .projects-container {
+        height: auto;
+    }
+}
