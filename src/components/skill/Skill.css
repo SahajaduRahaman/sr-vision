@@ -106,18 +106,18 @@
 @media only screen and (max-width: 800px) {
     .skills-container {
         height: auto;
-        min-width: max-content;
     }
 
     .skill-heading {
         width: 100%;
-        min-width: 350px;
+        min-width: max-content;
     }
 
     .skills-wrapper {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        min-width: 250px;
     }
 
     .skills-left {
