@@ -5,7 +5,7 @@
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: auto;
 }
 
 .contact-heading {
