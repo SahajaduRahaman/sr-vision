@@ -1,7 +1,7 @@
 .hero-container {
     height: auto;
     width: 97vw;
-    padding: 3rem;
+    padding: 10vh 3rem 3rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
